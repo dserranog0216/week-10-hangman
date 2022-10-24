@@ -29,9 +29,8 @@ def method_help():
   
   # Search the documentation for the requested method to learn how it works. You can use intermediate variables if you need them.
   
-  word = ",:_#,,,,,,:::____##Total_ _Pyt%on,,,,,,::#"
-  word.lstrip(",:%_#")
-  print(word)
+  print(",:_#,,,,,,:::____##Total_ _Pyt%on,,,,,,::#".lstrip(",:%_#"))
+  
 
   
 
@@ -59,6 +58,9 @@ def method_help():
   #   Methods, Help & Documentation Practice #3
   # Check if the sets below are isolated (that is, they have no elements in common), using the isdisjoint() method. Store this result in the isolated_sets variable:
   
-  # phone_brands = {"Samsung", "Xiaomi", "Apple", "Huawei", "LG"}
-  # tv_brands = {"Sony", "Philips", "Samsung", "LG"}
-  # Search the documentation for the requested method to know how it works.
+  phone_brands = {"Samsung", "Xiaomi", "Apple", "Huawei", "LG"}
+  tv_brands = {"Sony", "Philips", "Samsung", "LG"}
+  #Search the documentation for the requested method to know how it works.
+
+  isolated_sets = phone_brands.isdisjoint(tv_brands)
+  print(isolated_sets)
