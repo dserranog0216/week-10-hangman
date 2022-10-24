@@ -1,6 +1,14 @@
+def greetings(name):
+  print("hello"+name)
+
+
 
 def method_help():
-  pass
+  # pass
+  dic = {"key1": 100, "key2": 200}
+  a = dic.popitem()
+  print(a)
+  
 ########################################################################################################################
   # Methods, Help & Documentation Practice #1
   # Remove the characters to the left of our main text:
@@ -17,12 +25,15 @@ def method_help():
   
   # Use the lstrip() method. Print the result to the screen:
   
-  # ",:_#,,,,,,:::____##Total_ _Pyt%on,,,,,,::#"
+  #",:_#,,,,,,:::____##Total_ _Pyt%on,,,,,,::#"
   
   # Search the documentation for the requested method to learn how it works. You can use intermediate variables if you need them.
-  ",:_#,,,,,,:::____##Total_ _Pyt%on,,,,,,::#"
+  
+  word = ",:_#,,,,,,:::____##Total_ _Pyt%on,,,,,,::#"
+  word.lstrip(",:%_#")
+  print(word)
 
-
+  
 
 
 
@@ -32,7 +43,9 @@ def method_help():
   # Methods, Help & Documentation Practice #2
   # Add the element "orange" as the fourth element of the following list fruits, using the insert() method:
   
-  # fruits = ["mango", "banana", "cherry", "plum", "grapefruit"]
+  fruits = ["mango", "banana", "cherry", "plum", "grapefruit"]
+  fruits.insert(3,"orange")
+  print(fruits)
   
   # Search the documentation for the requested method to know how it works.
 
