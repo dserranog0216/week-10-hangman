@@ -1,4 +1,5 @@
 def greetings(name):
+  pass
   print("hello"+name)
 
 

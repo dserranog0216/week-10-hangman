@@ -15,9 +15,35 @@
 # def function_4(a,c):
 # |...
 # |return d
+from random import shuffle
 
-def interactions():
-  pass
+  #initial list
+sticks = ["_", "__","___","____","_____"]
+  
+  #mixing sticks
+def mix(my_list):
+  shuffle(my_list)
+  return(my_list)
+ 
+print(mix(sticks))
+#choose number
+def try_your_luck():
+  a_try = ""
+  while a_try not in ['1','2','3','4']:
+    a_try = input('choose your number ')
+  return int(a_try)
+
+
+#verify my try
+def verify_my_try(a_list, a_try):
+  if a_list[a_try - 1] == '_':
+    print("wash the dishes")
+  else:
+    print("this time you are safe")
+
+  print(f"you got {a_list[a_try-1]}")
+
+    
 
 #####################################################################################################
 
